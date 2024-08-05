@@ -110,3 +110,64 @@ span{
     background-color: #009688;
     color: #fff;
 }
+.about{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.Heading h1{
+    color: #009688;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 35px;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+.hero-content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+}
+.hero-content h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.hero-content p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #666;
+}
+.hero-content button{
+    display: inline-block;
+    background-color: #009688;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero-content button:hover{
+   background-color: #007e71;
+   transform: scale(1.1);
+    
+}
+.hero-image{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
