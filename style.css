@@ -378,22 +378,3 @@ font-style: italic;
   transform: translateY(-3px) translateX(-5px);
   color: #fff;
 }
-@media (max-width:1690px) {
-  section{
-      padding: 50px 5% 40px
-  }
-}
-@media (max-width:1120px) {
-  .footer {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-      gap: 2rem;
-  }
-}
-@media (max-width:700px) {
-  .footer {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-      gap: 2.5rem;
-  }
-}
