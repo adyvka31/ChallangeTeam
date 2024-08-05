@@ -34,11 +34,32 @@
           <a href="#" class="btn-read">Read More</a>
           <a href="#" class="btn-watch">Watch More</a>
         </div>
+        <h4 id="tulisan" style="text-align: center">Scrool Kebawah</h4>
+        <script>
+          var tulisan = document.getElementById("tulisan");
+
+          function tampilkanTulisan() {
+            tulisan.style.opacity = 0;
+          }
+
+          function sembunyikanTulisan() {
+            tulisan.style.opacity = 1;
+          }
+
+          window.addEventListener("scroll", function () {
+            if (window.scrollY > 0) {
+              tampilkanTulisan();
+            } else {
+              sembunyikanTulisan();
+            }
+          });
+        </script>
       </div>
     </section>
+    <br /><br /><br /><br /><br />
     <section class="about" id="about">
       <div class="Heading">
-        <h1>About Us</h1>
+        <h1>About <span style="color: black">us</span></h1>
       </div>
       <div class="container">
         <div class="hero-content">
@@ -51,6 +72,7 @@
         </div>
       </div>
     </section>
+    <br /><br /><br /><br /><br />
     <section class="project" id="project">
       <div class="poject-text">
         <p><span class="our">Our</span> Project</p>
