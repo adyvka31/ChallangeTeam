@@ -27,6 +27,7 @@
   font-size: 30px;
   cursor: pointer;
   color: white;
+  animation: fadeInDown 1s ease-in-out;
 }
 .item ul {
   list-style: none;
@@ -40,12 +41,14 @@
 .item ul li a {
   color: white;
   text-decoration: none;
+  animation: fadeInDown 1s ease-in-out;
+
 }
 .item ul li::after {
   content: "";
   height: 3px;
   width: 0;
-  background: #009688;
+  background: #0F6292;
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -71,74 +74,51 @@
 .text-title h1 {
   font-size: 60px;
   margin-top: 80px;
-}
-
-.text-title h1::before {
-  content: "";
-  position: absolute;
-  display: flex;
-  top: 38%;
-  right: 24%;
-  width: 51%;
-  height: 10%;
-  background-color: white;
-  animation: showRight 1s ease forwards;
-  animation-delay: 0.5s;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 .text-title p {
   margin: 20px auto;
   font-weight: 100;
   line-height: 25px;
-}
-
-.text-title p::before {
-  content: "";
-  position: absolute;
-  display: flex;
-  bottom: 39%;
-  left: 27%;
-  width: 47%;
-  height: 10%;
-  background-color: white;
-  animation: showDown 1s ease forwards;
-  animation-delay: 1s;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 span {
-  color: #009688;
+  color: #0F6292;
 }
 
 .button {
   width: 100%;
   display: flex;
   justify-content: center;
+  animation: fadeInUp 1s ease-in-out;
 }
 .button a {
   margin: 20px;
 }
 .btn-read {
-  border: #009688 solid 1px;
+  border: #0F6292 solid 1px;
   padding: 13px 40px;
   text-decoration: none;
   border-radius: 10px;
-  color: #009688;
+  color: #0F6292;
   transition: 0.5s;
 }
 .btn-read:hover {
-  background-color: #009688;
+  background-color: #0F6292;
   color: #fff;
 }
 .btn-watch {
-  border: #009688 solid 1px;
+  border: #0F6292 solid 1px;
   padding: 13px 40px;
   text-decoration: none;
   border-radius: 10px;
-  color: #009688;
+  color: #0F6292;
   transition: 0.5s;
 }
 .btn-watch:hover {
-  background-color: #009688;
+  background-color: #0F6292;
   color: #fff;
 }
 
@@ -146,15 +126,17 @@ span {
   color: #cecece;
   font-family: "Poppins", sans-serif;
   font-style: oblique;
-  margin-top: 7%;
+  margin-top: 9%;
   animation: Trampolin 2s infinite;
+  animation: fadeInUp 1s ease-in-out;
+
 }
 
 .about {
   background-color: rgb(255, 255, 255);
 }
 .Heading h1 {
-  color: #009688;
+  color: #0F6292;
   font-size: 45px;
   text-align: center;
   animation: appear linear;
@@ -189,7 +171,7 @@ span {
 }
 .hero-content button {
   display: inline-block;
-  background-color: #009688;
+  background-color: #0F6292;
   color: #fff;
   padding: 12px 24px;
   border-radius: 5px;
@@ -199,7 +181,7 @@ span {
   transition: 0.3s;
 }
 .hero-content button:hover {
-  background-color: #007e71;
+  background-color: #0F6292;
   transform: scale(1.1);
 }
 .hero-image {
@@ -224,7 +206,7 @@ img {
 }
 
 .our {
-  color: #009688;
+  color: #0F6292;
 }
 
 .card-1 {
@@ -250,7 +232,7 @@ img {
   width: 30vw;
   margin: 10px 20px;
   border-radius: 10px;
-  border: 5px solid #009688;
+  border: 5px solid #0F6292;
   transition: all 1s;
 }
 
@@ -261,7 +243,7 @@ img {
 
 .title-1,
 .title-2 {
-  background-color: #009688;
+  background-color: #0F6292;
   text-align: center;
   font-family: "Plus Jakarta Sans";
   padding: 10px;
@@ -290,9 +272,10 @@ section .footer {
   display: flex;
   justify-content: space-around;
   gap: 3.5rem;
-  background: #009688;
+  background: #0F6292;
   padding: 20px 10px;
   position: relative;
+  animation: fadeInUp 1s ease-in-out;
 }
 .footer-content .gede {
   color: #fff;
@@ -343,6 +326,7 @@ section .footer {
   flex-direction: row;
   justify-content: center;
   height: 40px;
+  margin-top: -10px;
   text-align: center;
   color: #fff;
 }
@@ -380,20 +364,24 @@ section .footer {
 
 /* keyframes settings */
 
-@keyframes showRight {
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
   100% {
-    width: 0;
+      opacity: 1;
+      transform: translateY(0);
   }
 }
 
-@keyframes showLeft {
-  100% {
-    width: 0;
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
   }
-}
-
-@keyframes showDown {
   100% {
-    height: 0;
+      opacity: 1;
+      transform: translateY(0);
   }
 }
